@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Hello World
+Bundle-SymbolicName: hellosworld
+Bundle-Version: 1.0.0
+Export-Package: com.khubla.osgiexample
+Bundle-Activator: com.khubla.osgiexample.activator.BundleActivatorImpl
+Import-Package: org.osgi.framework
