@@ -2,19 +2,34 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.khubla.osgi-example</groupId>
 	<artifactId>osgi-example</artifactId>
-	<packaging>jar</packaging>
+	<packaging>bundle</packaging>
 	<name>khubla.com OSGI example jar</name>
 	<version>1.0-SNAPSHOT</version>
 	<dependencies>
-	<dependency>
-		<groupId>org.osgi</groupId>
-		<artifactId>core</artifactId>
-		<version>4.3.0</version>
-		<scope>provided</scope>
-	</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>core</artifactId>
+			<version>4.3.0</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>2.3.7</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Export-Package>com.khubla.osgiexample.service</Export-Package>
+						<Private-Package>com.khubla.osgiexample.service.impl</Private-Package>
+						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
+						<Bundle-Activator>${pom.artifactId}.impl.Activator</Bundle-Activator>
+						<Export-Service>com.khubla.osgiexample.service.impl.HelloServiceImpl</Export-Service>
+					</instructions>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
