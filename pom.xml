@@ -25,7 +25,7 @@
 					<instructions>
 						<Export-Package>com.khubla.osgiexample.service,com.khubla.osgiexample.service.impl,com.khubla.osgiexample.activator</Export-Package>
 						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
-						<Bundle-Activator>com.khubla.osgiexample.activator.BundleActivatorImpl</Bundle-Activator>
+						<Bundle-Activator>com.khubla.osgiexample.activator.BundleActivatorImpl</Bundle-Activator> 
 						<Export-Service>com.khubla.osgiexample.service.impl.HelloServiceImpl</Export-Service>
 						<Embed-Dependency>*;scope=compile|runtime;inline=false</Embed-Dependency>
 						<Embed-Transitive>true</Embed-Transitive>
