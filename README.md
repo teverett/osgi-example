@@ -54,3 +54,8 @@ service; com.khubla.osgiexample.service.HelloService with properties:
    service.id = 17
 ```
 
+
+Travis status
+------
+[https://travis-ci.org/teverett/osgi-example](https://travis-ci.org/teverett/osgi-example)
+
