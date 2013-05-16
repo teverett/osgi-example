@@ -13,7 +13,7 @@ Simply use maven:
 Installing and running in Felix
 ------
 
-Firstly get the Felix framework from (http://felix.apache.org/downloads.cgi)[http://felix.apache.org/downloads.cgi]
+Firstly get the Felix framework from [http://felix.apache.org/downloads.cgi](http://felix.apache.org/downloads.cgi)
 
 Secondly extract the Felix runtime and copy the jar file into the `/bundles/` directory.
 
