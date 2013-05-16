@@ -30,7 +30,7 @@
 						<Export-Service>com.khubla.osgiexample.service.impl.HelloServiceImpl</Export-Service>
 					</instructions>
 				</configuration>
-			</plugin>
+			</plugin>	
 		</plugins>
 	</build>
 </project>
