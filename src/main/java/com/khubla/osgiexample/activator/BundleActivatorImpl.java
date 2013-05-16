@@ -8,6 +8,7 @@ import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 
 import com.khubla.osgiexample.service.HelloService;
+import com.khubla.osgiexample.service.impl.HelloServiceImpl;
 
 /**
  * @author tome
@@ -30,7 +31,7 @@ public class BundleActivatorImpl implements BundleActivator {
    public void start(BundleContext bundleContext) throws Exception {
       final Dictionary<String, String> properties = new Hashtable<String, String>();
       properties.put("Language", "English");
-      helloServiceRegistration = (ServiceRegistration<HelloService>) bundleContext.registerService(HelloService.class.getName(), this, properties);
+      helloServiceRegistration = (ServiceRegistration<HelloService>) bundleContext.registerService(HelloService.class.getName(), new HelloServiceImpl(), properties);
       System.out.println("Registered the HelloService");
    }
 
