@@ -1,4 +1,4 @@
-osgi-example
+osgi-example [![Build Status](https://travis-ci.org/teverett/osgi-example.png?branch=master)](https://travis-ci.org/teverett/osgi-example)
 ============
 
 A simple example which publishes an OSGI service
@@ -9,7 +9,7 @@ Building & testing
 Simply use maven:
 
 `mvn clean package`
-  
+
 Installing and running in Felix
 ------
 
@@ -21,7 +21,7 @@ Finally, run felix
 
 `java -jar bin\felix.jar`
 
-Checking that the bundle is installed 
+Checking that the bundle is installed
 ------
 
 From the Felix gogo console type `lb`. You should see something like this:
@@ -53,9 +53,3 @@ service; com.khubla.osgiexample.service.HelloService with properties:
    Language = English
    service.id = 17
 ```
-
-
-Travis status
-------
-[https://travis-ci.org/teverett/osgi-example](https://travis-ci.org/teverett/osgi-example)
-
