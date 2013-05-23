@@ -1,4 +1,4 @@
-package com.khubla.osgiexample.service;
+package com.khubla.osgiexample1.service;
 
 /**
  * @author tome

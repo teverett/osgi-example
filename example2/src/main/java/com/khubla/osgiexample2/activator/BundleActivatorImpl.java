@@ -1,4 +1,4 @@
-package com.khubla.osgiexample.activator;
+package com.khubla.osgiexample2.activator;
 
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -7,8 +7,8 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 
-import com.khubla.osgiexample.service.HelloService;
-import com.khubla.osgiexample.service.impl.HelloServiceImpl;
+import com.khubla.osgiexample2.service.HelloService;
+import com.khubla.osgiexample2.service.impl.HelloServiceImpl;
 
 /**
  * @author tome
