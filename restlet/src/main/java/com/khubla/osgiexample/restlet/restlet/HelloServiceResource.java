@@ -17,17 +17,17 @@ public class HelloServiceResource extends ServerResource {
     */
    private HelloService helloService;
 
-   public HelloService getHelloService() {
-      return helloService;
-   }
-
    /**
     * ctor
     */
    public HelloServiceResource() {
-      BundleContext bundleContext = BundleReference.class.cast(HelloService.class.getClassLoader()).getBundle().getBundleContext();
-      ServiceReference<HelloService> serviceReference = bundleContext.getServiceReference(HelloService.class);
+      final BundleContext bundleContext = BundleReference.class.cast(HelloService.class.getClassLoader()).getBundle().getBundleContext();
+      final ServiceReference<HelloService> serviceReference = bundleContext.getServiceReference(HelloService.class);
       helloService = bundleContext.getService(serviceReference);
+   }
+
+   public HelloService getHelloService() {
+      return helloService;
    }
 
    @Get
