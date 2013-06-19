@@ -9,5 +9,6 @@
 		<module>basic</module>
 		<module>service</module>
 		<module>restlet</module>
+		<module>sling</module>
 	</modules>
 </project>	

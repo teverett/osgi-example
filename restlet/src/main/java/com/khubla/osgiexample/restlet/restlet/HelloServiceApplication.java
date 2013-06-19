@@ -1,4 +1,4 @@
-package com.khubla.osgiexample.rest.restlet;
+package com.khubla.osgiexample.restlet.restlet;
 
 import org.restlet.Application;
 import org.restlet.Restlet;

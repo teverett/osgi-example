@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.khubla.osgi-example</groupId>
-	<artifactId>osgi-restlet</artifactId>
+	<artifactId>osgi-sling</artifactId>
 	<packaging>bundle</packaging>
-	<name>khubla.com OSGI restlet jar</name>
+	<name>khubla.com OSGI sling jar</name>
 	<version>1.0-SNAPSHOT</version>
-	<description>OSGI Restlet Example</description>
+	<description>OSGI Sling Example</description>
 	<repositories>
 		<repository>
 			<id>maven-restlet</id>
@@ -26,11 +26,6 @@
 			<version>4.11</version>
 		</dependency>
 		<dependency>
-			<groupId>org.restlet.jse</groupId>
-			<artifactId>org.restlet</artifactId>
-			<version>2.1.2</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.scr.annotations</artifactId>
 			<version>1.9.4</version>
@@ -40,12 +35,6 @@
 			<artifactId>org.apache.felix.scr</artifactId>
 			<version>1.6.2</version>
 			<type>bundle</type>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.felix</groupId>
-			<artifactId>org.apache.felix.http.jetty</artifactId>
-			<version>2.2.0</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
@@ -75,10 +64,10 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Export-Package>com.khubla.osgiexample.restlet.service,com.khubla.osgiexample.restlet.service.impl,com.khubla.osgiexample.restlet.activator</Export-Package>
+						<Export-Package>com.khubla.osgiexample.sling.service,com.khubla.osgiexample.sling.service.impl,com.khubla.osgiexample.sling.activator</Export-Package>
 						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
-						<Bundle-Activator>com.khubla.osgiexample.restlet.activator.BundleActivatorImpl</Bundle-Activator>
-						<Export-Service>com.khubla.osgiexample.restlet.service.impl.HelloServiceImpl</Export-Service>
+						<Bundle-Activator>com.khubla.osgiexample.sling.activator.BundleActivatorImpl</Bundle-Activator>
+						<Export-Service>com.khubla.osgiexample.sling.service.impl.HelloServiceImpl</Export-Service>
 						<Embed-Dependency>*;scope=compile|runtime;inline=false</Embed-Dependency>
 						<Embed-Transitive>true</Embed-Transitive>
 					</instructions>

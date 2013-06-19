@@ -1,9 +1,9 @@
-package com.khubla.osgiexample.rest.restlet;
+package com.khubla.osgiexample.restlet.restlet;
 
 import org.restlet.resource.Get;
 import org.restlet.resource.ServerResource;
 
-import com.khubla.osgiexample.rest.service.HelloService;
+import com.khubla.osgiexample.restlet.service.HelloService;
 
 /**
  * @author tome

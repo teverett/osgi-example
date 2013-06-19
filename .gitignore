@@ -26,3 +26,7 @@
 /restlet/.project
 /restlet/.classpath
 /restlet/.settings/
+/sling/target/
+/sling/.project
+/sling/.classpath
+/sling/.settings/

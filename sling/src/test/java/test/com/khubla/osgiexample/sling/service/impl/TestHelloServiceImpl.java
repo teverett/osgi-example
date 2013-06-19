@@ -1,10 +1,10 @@
-package test.com.khubla.osgiexample.rest.service.impl;
+package test.com.khubla.osgiexample.sling.service.impl;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.khubla.osgiexample.rest.service.HelloService;
-import com.khubla.osgiexample.rest.service.impl.HelloServiceImpl;
+import com.khubla.osgiexample.sling.service.HelloService;
+import com.khubla.osgiexample.sling.service.impl.HelloServiceImpl;
 
 /**
  * @author tome

@@ -1,11 +1,11 @@
-package com.khubla.osgiexample.rest.service.impl;
+package com.khubla.osgiexample.sling.service.impl;
 
 import java.util.Date;
 
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Service;
 
-import com.khubla.osgiexample.rest.service.HelloService;
+import com.khubla.osgiexample.sling.service.HelloService;
 
 /**
  * @author tome
