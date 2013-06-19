@@ -1,14 +1,13 @@
 package com.khubla.osgiexample.restlet.restlet;
 
-import org.restlet.resource.Get;
-import org.restlet.resource.ServerResource;
+import org.restlet.resource.Resource;
 
 import com.khubla.osgiexample.restlet.service.HelloService;
 
 /**
  * @author tome
  */
-public class HelloServiceResource extends ServerResource {
+public class HelloServiceResource extends Resource {
    /**
     * the hello service
     */
@@ -22,7 +21,6 @@ public class HelloServiceResource extends ServerResource {
       HelloServiceResource.helloService = helloService;
    }
 
-   @Get
    public String sayHello() {
       if (null != helloService) {
          return helloService.sayHello();
