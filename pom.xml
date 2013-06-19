@@ -8,6 +8,5 @@
 	<modules>
 		<module>basic</module>
 		<module>restlet</module>
-		<module>sling</module>
 	</modules>
 </project>	

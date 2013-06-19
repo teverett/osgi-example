@@ -1,6 +1,8 @@
 package com.khubla.osgiexample.restlet.restlet;
 
-import org.apache.felix.scr.annotations.Reference;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.BundleReference;
+import org.osgi.framework.ServiceReference;
 import org.restlet.resource.Get;
 import org.restlet.resource.ServerResource;
 
@@ -13,11 +15,19 @@ public class HelloServiceResource extends ServerResource {
    /**
     * the hello service
     */
-   @Reference
    private HelloService helloService;
 
    public HelloService getHelloService() {
       return helloService;
+   }
+
+   /**
+    * ctor
+    */
+   public HelloServiceResource() {
+      BundleContext bundleContext = BundleReference.class.cast(HelloService.class.getClassLoader()).getBundle().getBundleContext();
+      ServiceReference<HelloService> serviceReference = bundleContext.getServiceReference(HelloService.class);
+      helloService = bundleContext.getService(serviceReference);
    }
 
    @Get
