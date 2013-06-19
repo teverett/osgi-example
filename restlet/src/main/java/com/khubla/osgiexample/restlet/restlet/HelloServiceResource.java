@@ -1,26 +1,30 @@
 package com.khubla.osgiexample.restlet.restlet;
 
-import org.restlet.resource.Resource;
+import org.apache.felix.scr.annotations.Reference;
+import org.restlet.resource.Get;
+import org.restlet.resource.ServerResource;
 
 import com.khubla.osgiexample.restlet.service.HelloService;
 
 /**
  * @author tome
  */
-public class HelloServiceResource extends Resource {
+public class HelloServiceResource extends ServerResource {
    /**
     * the hello service
     */
-   private static HelloService helloService;
+   @Reference
+   private HelloService helloService;
 
-   public static HelloService getHelloService() {
+   public HelloService getHelloService() {
       return helloService;
    }
 
-   public static void setHelloService(HelloService helloService) {
-      HelloServiceResource.helloService = helloService;
+   public void setHelloService(HelloService helloService) {
+      this.helloService = helloService;
    }
 
+   @Get
    public String sayHello() {
       if (null != helloService) {
          return helloService.sayHello();

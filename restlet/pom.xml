@@ -27,22 +27,15 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.restlet</groupId>
-			<artifactId>org.restlet</artifactId>
-			<version>1.1.10</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.scr.annotations</artifactId>
 			<version>1.9.4</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.felix</groupId>
-			<artifactId>org.apache.felix.http.jetty</artifactId>
-			<version>2.2.0</version>
-			<scope>provided</scope>
+			<groupId>org.restlet.jse</groupId>
+			<artifactId>org.restlet</artifactId>
+			<version>2.1.2</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -76,6 +69,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
+						<Bundle-Activator>com.khubla.osgiexample.restlet.activator.BundleActivatorImpl</Bundle-Activator>
 						<Embed-Dependency>org.restlet</Embed-Dependency>
 					</instructions>
 				</configuration>

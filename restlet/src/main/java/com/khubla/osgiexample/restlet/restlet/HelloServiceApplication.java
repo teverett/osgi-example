@@ -2,7 +2,7 @@ package com.khubla.osgiexample.restlet.restlet;
 
 import org.restlet.Application;
 import org.restlet.Restlet;
-import org.restlet.Router;
+import org.restlet.routing.Router;
 
 /**
  * @author tome
