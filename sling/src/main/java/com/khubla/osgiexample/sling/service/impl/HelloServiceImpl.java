@@ -15,10 +15,6 @@ import com.khubla.osgiexample.sling.service.HelloService;
 @Component
 @Service
 public class HelloServiceImpl implements HelloService {
-   public String sayHello() {
-      return "Hello.  The date is: " + new Date().toString();
-   }
-
    @Activate
    void activate() {
       System.out.println("Activated: " + this.getClass().getCanonicalName());
@@ -27,5 +23,9 @@ public class HelloServiceImpl implements HelloService {
    @Deactivate
    void deactivate() {
       System.out.println("Deactivated: " + this.getClass().getCanonicalName());
+   }
+
+   public String sayHello() {
+      return "Hello.  The date is: " + new Date().toString();
    }
 }
