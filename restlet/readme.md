@@ -10,7 +10,7 @@ You will need these bundles installed in Felix
 
 Surf to:
 
-(http://localhost:8182/hello)[http://localhost:8182/hello]
+* (http://localhost:8182/hello)[http://localhost:8182/hello]
 
 
 
