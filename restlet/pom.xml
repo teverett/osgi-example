@@ -37,20 +37,9 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
-			<artifactId>org.apache.felix.scr</artifactId>
-			<version>1.6.2</version>
-			<type>bundle</type>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.http.jetty</artifactId>
 			<version>2.2.0</version>
 			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.felix</groupId>
-			<artifactId>org.apache.felix.scr.generator</artifactId>
-			<version>1.7.0</version>
 		</dependency>
 	</dependencies>
 	<build>
