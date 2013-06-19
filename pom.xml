@@ -8,6 +8,6 @@
 	<modules>
 		<module>basic</module>
 		<module>service</module>
-		<module>rest</module>
+		<module>restlet</module>
 	</modules>
 </project>	

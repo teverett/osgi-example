@@ -22,3 +22,7 @@
 /service/.project
 /service/.classpath
 /service/.settings/
+/restlet/target/
+/restlet/.project
+/restlet/.classpath
+/restlet/.settings/
