@@ -5,14 +5,12 @@ import java.util.Hashtable;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
 import org.osgi.framework.ServiceRegistration;
 import org.restlet.Application;
 import org.restlet.Component;
 import org.restlet.data.Protocol;
 
 import com.khubla.osgiexample.rest.restlet.HelloServiceApplication;
-import com.khubla.osgiexample.rest.restlet.HelloServiceResource;
 import com.khubla.osgiexample.rest.service.HelloService;
 import com.khubla.osgiexample.rest.service.impl.HelloServiceImpl;
 
@@ -46,11 +44,6 @@ public class BundleActivatorImpl implements BundleActivator {
       properties.put("Language", "English");
       helloServiceRegistration = (ServiceRegistration<HelloService>) bundleContext.registerService(HelloService.class.getName(), new HelloServiceImpl(), properties);
       System.out.println("Registered the HelloService");
-      /*
-       * set the service into the resource
-       */
-      final ServiceReference<HelloService> serviceReference = bundleContext.getServiceReference(HelloService.class);
-      HelloServiceResource.setHelloService(bundleContext.getService(serviceReference));
       /*
        * create the restlet component
        */
