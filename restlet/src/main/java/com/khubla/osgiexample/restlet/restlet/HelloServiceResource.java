@@ -20,10 +20,6 @@ public class HelloServiceResource extends ServerResource {
       return helloService;
    }
 
-   public void setHelloService(HelloService helloService) {
-      this.helloService = helloService;
-   }
-
    @Get
    public String sayHello() {
       if (null != helloService) {
@@ -31,5 +27,9 @@ public class HelloServiceResource extends ServerResource {
       } else {
          return "helloService has not been bound";
       }
+   }
+
+   public void setHelloService(HelloService helloService) {
+      this.helloService = helloService;
    }
 }
