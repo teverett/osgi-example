@@ -31,9 +31,10 @@
 			<version>2.1.2</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.jetty</groupId>
-			<artifactId>jetty-server</artifactId>
-			<version>7.0.2.v20100331</version>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.http.jetty</artifactId>
+			<version>2.2.0</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
@@ -45,7 +46,6 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Import-Package>org.restlet.resource</Import-Package>
 						<Export-Package>com.khubla.osgiexample.rest.service,com.khubla.osgiexample.rest.service.impl,com.khubla.osgiexample.rest.activator</Export-Package>
 						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
 						<Bundle-Activator>com.khubla.osgiexample.rest.activator.BundleActivatorImpl</Bundle-Activator>
