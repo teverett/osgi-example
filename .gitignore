@@ -10,3 +10,15 @@
 /example1/.classpath
 /example1/target/
 /example1/.settings/
+/basic/target/
+/basic/.project
+/basic/.classpath
+/basic/.settings/
+/rest/target/
+/rest/.project
+/rest/.classpath
+/rest/.settings/
+/service/target/
+/service/.project
+/service/.classpath
+/service/.settings/

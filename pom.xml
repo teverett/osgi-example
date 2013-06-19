@@ -6,7 +6,8 @@
 	<packaging>pom</packaging>
 	<name>khubla.com OSGI example</name>
 	<modules>
-		<module>example1</module>
-		<module>example2</module>
+		<module>basic</module>
+		<module>service</module>
+		<module>rest</module>
 	</modules>
 </project>	
