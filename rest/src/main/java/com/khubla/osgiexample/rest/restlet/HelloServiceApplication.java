@@ -12,7 +12,7 @@ public class HelloServiceApplication extends Application {
     * set up inbound routes
     */
    public synchronized Restlet createInboundRoot() {
-      Router router = new Router(getContext());
+      final Router router = new Router(getContext());
       router.attach("/hello", HelloServiceResource.class);
       return router;
    }

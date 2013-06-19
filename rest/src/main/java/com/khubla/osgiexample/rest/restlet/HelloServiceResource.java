@@ -4,7 +4,6 @@ import org.restlet.resource.Get;
 import org.restlet.resource.ServerResource;
 
 import com.khubla.osgiexample.rest.service.HelloService;
-import com.khubla.osgiexample.rest.service.impl.HelloServiceImpl;
 
 /**
  * @author tome
@@ -13,7 +12,7 @@ public class HelloServiceResource extends ServerResource {
    /**
     * the hello service
     */
-   private static HelloService helloService = new HelloServiceImpl();
+   private static HelloService helloService;
 
    public static HelloService getHelloService() {
       return helloService;
@@ -25,6 +24,10 @@ public class HelloServiceResource extends ServerResource {
 
    @Get
    public String sayHello() {
-      return "hi there";
+      if (null != helloService) {
+         return helloService.sayHello();
+      } else {
+         return "helloService has not been bound";
+      }
    }
 }
