@@ -61,6 +61,17 @@
 					</instructions>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.ops4j</groupId>
+				<artifactId>maven-pax-plugin</artifactId>
+				<version>1.5</version>
+				<configuration>
+					<provision>
+						<param>--platform=felix</param>
+						<param>--profiles=compendium,web,war</param>
+					</provision>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
