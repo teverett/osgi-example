@@ -1,4 +1,6 @@
-osgi-example [![Build Status](https://travis-ci.org/teverett/osgi-example.png?branch=master)](https://travis-ci.org/teverett/osgi-example)
+[![Build Status](https://travis-ci.org/teverett/osgi-example.png?branch=master)](https://travis-ci.org/teverett/osgi-example)
+
+osgi-example 
 ============
 
 A simple example which publishes an OSGI service
